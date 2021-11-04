@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <stdbool.h>
 
-int main(int argc, char *argv[]){
-  int n = atoi(argv[1]);
-  int m = atoi(argv[2]);
-   srand(time(NULL));
-  int numeros[n];
-  for (int i = 0; i < n; i++){
-    numeros[i]= rand() % (m + 1);
-    printf("%d\n", numeros[i]);
-   }
+bool iguales(int a, int b, int c){
+  if (a == b && b == c) return true;
+  else return false;
+}
+
+int main(int argc, char *argv[]) {
+  int x = atoi(argv[1]);
+  int y = atoi(argv[2]);
+  int z = atoi(argv[3]);
+  printf("%d\n", iguales(x, y, z));
   return 0;
 }

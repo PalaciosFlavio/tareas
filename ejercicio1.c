@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void saludar() {
-  printf("hola,juan\n");
+  printf("hola\n");
 }
 
 
